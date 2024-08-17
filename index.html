@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="CSS\style.css" rel="stylesheet" />
+    <title>JavaScript Lampu Sederhana</title>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <!-- Teks di bagian atas dengan kotak yang menggantung -->
+    <div class="bg-blue-500 text-center py-6 fade-in">
+        <p class="hanging-box">Cetrekan Lampu Sederhana</p>
+    </div>
+
+    <div class="flex flex-grow flex-col md:flex-row justify-center items-center bg-blue-500 gap-12 p-6">
+        
+        <!-- lampu 0 -->
+        <div class="flex flex-col gap-8 items-center slide-in">
+            <img src="Assets/Images/off.png" alt="" id="lampu0" class="w-56 h-56 md:w-72 md:h-72 lampu-off blinking" />
+
+            <label for="toggle0" class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" id="toggle0" class="sr-only peer" onchange="toggleLampu(0)">
+                <div class="relative w-14 h-7 bg-gray-200 rounded-full peer peer-focus:ring-4 
+                    peer-focus:ring-red-300 dark:peer-focus:ring-red-800 dark:bg-gray-700 
+                    peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full 
+                    peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:top-0.5 after:start-[2px] 
+                    after:bg-white after:border-gray-300 after:border 
+                    after:rounded-full after:h-6 after:w-6 
+                    after:transition-all 
+                    dark:border-gray-600 peer-checked:bg-red-600">
+                </div>
+                <span class="ms-4 text-xl font-medium text-gray-900 dark:text-gray-300">HidupKeun</span>
+            </label>            
+        </div>
+
+        <!-- lampu 1 -->
+        <div class="flex flex-col gap-8 items-center slide-in">
+            <img src="Assets/Images/off.png" alt="" id="lampu1" class="w-56 h-56 md:w-72 md:h-72 lampu-off blinking" />
+            
+            <label for="toggle1" class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" id="toggle1" class="sr-only peer" onchange="toggleLampu(1)">
+                <div class="relative w-14 h-7 bg-gray-200 rounded-full peer peer-focus:ring-4 
+                    peer-focus:ring-red-300 dark:peer-focus:ring-red-800 dark:bg-gray-700 
+                    peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full 
+                    peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:top-0.5 after:start-[2px] 
+                    after:bg-white after:border-gray-300 after:border 
+                    after:rounded-full after:h-6 after:w-6 
+                    after:transition-all 
+                    dark:border-gray-600 peer-checked:bg-red-600">
+                </div>
+                <span class="ms-4 text-xl font-medium text-gray-900 dark:text-gray-300">HidupKeun</span>
+            </label>           
+        </div>
+
+        <!-- lampu 2 -->
+        <div class="flex flex-col gap-8 items-center slide-in">
+            <img src="Assets/Images/off.png" alt="" id="lampu2" class="w-56 h-56 md:w-72 md:h-72 lampu-off blinking" />
+
+            <label for="toggle2" class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" id="toggle2" class="sr-only peer" onchange="toggleLampu(2)">
+                <div class="relative w-14 h-7 bg-gray-200 rounded-full peer peer-focus:ring-4 
+                    peer-focus:ring-red-300 dark:peer-focus:ring-red-800 dark:bg-gray-700 
+                    peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full 
+                    peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:top-0.5 after:start-[2px] 
+                    after:bg-white after:border-gray-300 after:border 
+                    after:rounded-full after:h-6 after:w-6 
+                    after:transition-all 
+                    dark:border-gray-600 peer-checked:bg-red-600">
+                </div>
+                <span class="ms-4 text-xl font-medium text-gray-900 dark:text-gray-300">HidupKeun</span>
+            </label>
+        </div>
+
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center py-8 fade-in">
+        <p class="text-xl md:text-3xl">® made by: yusufahmadghiffari / byag ®</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="JS\cetrek.js"></script>
+</body>
+
+</html>
